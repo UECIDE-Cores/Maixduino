@@ -1,0 +1,10 @@
+libraries/lv_maixduino/examples libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/extras libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/keywords.txt libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/library.json libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/library.properties libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/LICENSE libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/lv_conf.h libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/README.md libraries/Display/maixduino/lvgl
+libraries/lv_maixduino/src libraries/Display/maixduino/lvgl
+

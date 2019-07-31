@@ -1,0 +1,181 @@
+Source: maixduino
+Section: main
+XBSC-Family: risc-v
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.4
+Homepage: https://maixduino.sipeed.com
+
+Package: maixduino
+Architecture: all
+XBSC-Group: Cores
+XBSC-SubGroup: RISC-V
+Depends: riscv64-unknown-elf
+Recommends: libadafruit-gfx-library-maixduino, libcamera-maixduino, liblvgl-maixduino, libmaix-kpu-maixduino, libmaix-speech-recognition-maixduino, libmsa300-maixduino, libns2009-maixduino, libsd-maixduino, libsipeed-ov2640-maixduino, libsipeed-st7788-maixduino, libspi-maixduino, libticker-maixduino, libwifiesp-maixduino, libwire-maixduino
+Description: Maixduino
+ Maixduino makes the Arduino IDE and libraries support the Maix series of development boards 
+ (k210 chips), making it easy to use a large number of existing open source Arduino libraries 
+ for rapid development and prototyping
+
+Package: libadafruit-gfx-library-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Display
+XBSC-SubSubGroup: TFT
+Provides: Adafruit-UL-GFX.h
+Depends: maixduino
+Description: Adafruit GFX for Maixduino
+
+Package: libcamera-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Sensors
+XBSC-SubSubGroup: Optical
+Provides: Camera.h
+Depends: maixduino
+Description: Camera library for Maixduino
+
+Package: liblvgl-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Display
+XBSC-SubSubGroup: Support
+Provides: lvgl.h
+Depends: maixduino
+Description: LittlevGL Display Library for Maixduino
+
+Package: libmaix-kpu-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Board Support
+XBSC-SubSubGroup: K210
+Provides: Maix-UL-KPU.h
+Depends: maixduino
+Description: K210 KPU API Support for Maixduino
+
+Package: libmaix-speech-recognition-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Audio
+XBSC-SubSubGroup: Processing
+Provides: Maix-UL-Speech-UL-Recognition.h
+Depends: maixduino
+Description: Speech Recognition Library for Maixduino
+
+Package: libmsa300-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Sensors
+XBSC-SubSubGroup: Attitude
+Provides: MSA300.h
+Depends: maixduino
+Description: MSA300 Accelerometer for Maixduino
+
+Package: libns2009-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Display
+XBSC-SuSubbGroup: Touch
+Provides: ns2009.h
+Depends: maixduino
+Description:NS2009 Touchscreen Driver for Maixduino
+
+Package: libsd-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Storage
+XBSC-SubSubGroup: SD and MMC
+Provides: SD.h
+Depends: maixduino, libspi-maixduino
+Description: SD Card Libraru for Maixduino
+
+Package: libsipeed-ov2640-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Sensors
+XBSC-SubSubGroup: Optical
+Provides: Sipeed-UL-OV2640.h
+Depends: maixduino
+Description: OV2640 Camera Driver for Maixduino
+
+Package: libsipeed-st7788-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Display
+XBSC-SubSubGroup: TFT
+Provides: Sipeed-UL-ST7789.h
+Depends: maixduino
+Description: ST7789 TFT Driver for Maixduino
+
+Package: libspi-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Communications
+XBSC-SubSubGroup: SPI
+Provides: SPI.h
+Depends: maixduino
+Description: SPI library for Maixduino
+
+Package: libticker-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Time
+XBSC-SubSubGroup: Timers
+Provides: Ticker.h
+Depends: maixduino
+Description: Ticker library for Maixduino
+ 
+Package: libwifiesp-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Communications
+XBSC-SubSubgroup: Wireless 
+Provides: WiFiEsp.h
+Depends: maixduino
+Description: ESP8266 WiFi Driver for Maixduino
+
+Package: libwire-maixduino
+Architecture: all
+XBSC-Group: Libraries
+XBSC-SubGroup: Communications
+XBSC-SubSubGroup: I2C
+Provides: Wire.h
+Depends: maixduino
+Description: Wire library for Maixduino
+
+Package: sipeed-maix-bit
+Architecture: all
+XBSC-Group: Boards
+XBSC-SubGroup: Sipeed
+Depends: maixduino
+Description: MAix BiT
+
+Package: sipeed-maix-bitm
+Architecture: all
+XBSC-Group: Boards
+XBSC-SubGroup: Sipeed
+Depends: maixduino
+Description: MAix BiT-Mic
+
+Package: sipeed-maix-one
+Architecture: all
+XBSC-Group: Boards
+XBSC-SubGroup: Sipeed
+Depends: maixduino
+Description: MAix One Dock
+
+Package: sipeed-maix-go
+Architecture: all
+XBSC-Group: Boards
+XBSC-SubGroup: Sipeed
+Depends: maixduino
+Description: MAix Go
+
+Package: sipeed-maixduino
+Architecture: all
+XBSC-Group: Boards
+XBSC-SubGroup: Sipeed
+Depends: maixduino
+Description: MAixduino
+

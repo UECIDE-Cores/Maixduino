@@ -1,0 +1,14 @@
+libraries/Adafruit-GFX-Library/Adafruit_GFX.cpp libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/Adafruit_GFX.h libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/Adafruit_SPITFT.cpp libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/Adafruit_SPITFT.h libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/Adafruit_SPITFT_Macros.h libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/examples libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/fontconvert libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/Fonts libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/gfxfont.h libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/glcdfont.c libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/library.properties libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/license.txt libraries/Display/maixduino/Adafruit_GFX
+libraries/Adafruit-GFX-Library/README.md libraries/Display/maixduino/Adafruit_GFX
+

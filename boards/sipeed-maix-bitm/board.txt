@@ -1,0 +1,35 @@
+name=sipeed-maix-bitm
+description=MAix BiT-Mic
+group=Sipeed
+family=risc-v
+core=maixduino
+compiler=riscv64-unknown-elf
+
+options.clksrc.name=CPU Clock
+options.clksrc.default=400
+options.clksrc.400.name=400MHz CPU Clock Frequency
+options.clksrc.500.name=500MHz CPU Clock Frequency
+options.clksrc.600.name=600MHz CPU Clock Frequency
+options.clksrc.400.build.f_cpu=400000000L
+options.clksrc.500.build.f_cpu=500000000L
+options.clksrc.600.build.f_cpu=600000000L
+
+options.burn_baudrate.name=Burn baud rate
+options.burn_baudrate.default=1000000
+options.burn_baudrate.2000000.name=2 Mbps
+options.burn_baudrate.1500000.name=1.5 Mbps
+options.burn_baudrate.1000000.name=1 Mbps
+options.burn_baudrate.2000000.build.burn_baudrate=2000000
+options.burn_baudrate.1500000.build.burn_baudrate=1500000
+options.burn_baudrate.1000000.build.burn_baudrate=1000000
+
+build.f_cpu=${option:clksrc.build.f_cpu}
+build.burn_baudrate=${option:burn_baudrate.build.burn_baudrate}
+
+build.burn_tool_firmware=dan
+build.board=BOARD_SIPEED_MAIX_BIT
+build.sdata.size=512
+
+upload.maximum_size=8388608
+build.ldscript=${core:root}/arduino/kendryte-standalone-sdk/lds/kendryte.ld
+

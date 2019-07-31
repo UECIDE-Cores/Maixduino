@@ -1,0 +1,2 @@
+boards/sipeed-maix-one/board.txt boards/Sipeed/sipeed-maix-one
+variants/sipeed_maix_one_dock/pins_arduino.h boards/Sipeed/sipeed-maix-one
